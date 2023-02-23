@@ -1,0 +1,158 @@
+<!doctype>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Posicionamento Estático e Relativo</title>
+
+		<style type="text/css">
+
+			body{
+				background: #007fc7;
+			}
+
+			h1{
+				
+			}
+
+			p{
+				
+				width: 300px;
+			}
+
+			#static{
+				background: #fff;
+				width: 800px;
+				margin: 10px auto ;
+				padding: 10px;
+			}
+
+			#relative{
+				background: #fff;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+			}
+
+			#Absolute{
+				background: #fff;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+			}
+
+
+			#fixo{
+				background: #fff;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+			}
+
+			.testando{
+				position: relative;
+				top: auto;
+				left: 80px;
+				right: auto;
+				border: 1px solid blue;
+
+			}
+
+			.testando3{
+				top: auto;
+				left: 80px;
+				right: auto;
+				position: absolute;
+				border: 1px solid blue;
+
+			}
+
+			.testando4{
+				position: fixed;
+				border: 1px solid blue;
+				right: 0px;
+				bottom: 0px;
+
+			}
+			
+
+		</style>
+	
+	</head>
+
+	<body>
+	<p>Os posicionamentos são: Static, Relative, absolute e fixed.</p>
+
+	<div id="static">
+
+		<h1>Posicionamento Static</h1>
+		<p> Posicionamento Estático: O posicionamento estático nao altera a forma de texto (um a baixo do outro) pois é o posicionamento padrão.
+		</p>
+
+		<p> Posicionamento Estático: O posicionamento estático nao altera a forma de texto (um a baixo do outro) pois é o posicionamento padrão.
+		</p>
+
+		<p> Posicionamento Estático: O posicionamento estático nao altera a forma de texto (um a baixo do outro) pois é o posicionamento padrão.
+		</p>
+	</div>
+
+	<div id="relative">
+
+		<h1>Posicionamento Relative</h1>
+		<p> Posicionamento Relativo: O posicionamento Relativo vai se adequar a direção que for definido, exemplo nop segundo pararafo esta sendo aplicado top (20px) e left (80px).
+		</p>
+
+		<p class="testando"> Posicionamento Relativo: O posicionamento Relativo vai se adequar a direção que for definido, exemplo aqui esta sendo aplicado top (20px) e left (80px).
+		</p>
+
+		<p> Posicionamento Relativo: O posicionamento Relativo vai se adequar a direção que for definido, exemplo no segundo paragrafo esta sendo aplicado top (20px) e left (80px).
+		</p>
+	</div>
+
+	<div id="Absolute">
+
+		<h1>Posicionamento Absoluto</h1>
+		<p> Posicionamento Aboluto: O posicionamento absoluto quando definido sai do fluxo normal do site e nao afeta a posição dos outros elementos da pagina, entao os elementos da pagina se comportam como se o bloco de texto nao estivesse no local ficando assim a baixo do paragrafo definido como absoluto, o absolute tambem possibilita que quando aplicado o elemento vai acomapnhar a rolagem da pagina.
+		</p>
+
+		<p class="testando3"> Posicionamento Aboluto: O posicionamento absoluto quando definido sai do fluxo normal do site e nao afeta a posição dos outros elementos da pagina, entao os elementos da pagina se comportam como se o bloco de texto nao estivesse no local ficando assim a baixo do paragrafo definido como absoluto, o absolute tambem possibilita que quando aplicado o elemento vai acomapnhar a rolagem da pagina.
+		</p>
+
+		 <p> Posicionamento Aboluto: O posicionamento absoluto quando definido sai do fluxo normal do site e nao afeta a posição dos outros elementos da pagina, entao os elementos da pagina se comportam como se o bloco de texto nao estivesse no local ficando assim a baixo do paragrafo definido como absoluto, o absolute tambem possibilita que quando aplicado o elemento vai acomapnhar a rolagem da pagina.
+		</p>
+	</div>
+
+	<div id="Fixo">
+
+		<h1>Posicionamento Fixo</h1>
+		<p> Posicionamento Aboluto: Posicionamento Fixo: O posicionamento fixo vai ser fixo em relação a janela do nevagador, entao ele smepre vai ficar fixo de acordo com a janela. É bastante usado para chats em sites. aqui usamos o fixed com as medidas: top e left:0px.
+		</p>
+
+		<p > Posicionamento Fixo: O posicionamento fixo vai ser fixo em relação a janela do nevagador, entao ele smepre vai ficar fixo de acordo com a janela. É bastante usado para chats em sites. aqui usamos o fixed com as medidas: top e left:0px.
+		</p>
+
+		<p>  Posicionamento Fixo: O posicionamento fixo vai ser fixo em relação a janela do nevagador, entao ele smepre vai ficar fixo de acordo com a janela. É bastante usado para chats em sites. aqui usamos o fixed com as medidas: top e left:0px.
+		</p>
+
+		<p class="testando4">  Posicionamento Fixo: O posicionamento fixo vai ser fixo em relação a janela do nevagador, entao ele smepre vai ficar fixo de acordo com a janela. É bastante usado para chats em sites. aqui usamos o fixed com as medidas: top e left:0px.
+		</p>
+
+		<p>  Posicionamento Fixo: O posicionamento fixo vai ser fixo em relação a janela do nevagador, entao ele smepre vai ficar fixo de acordo com a janela. É bastante usado para chats em sites. aqui usamos o fixed com as medidas: top e left:0px.
+		</p>
+
+		<p>  Posicionamento Fixo: O posicionamento fixo vai ser fixo em relação a janela do nevagador, entao ele smepre vai ficar fixo de acordo com a janela. É bastante usado para chats em sites. aqui usamos o fixed com as medidas: top e left:0px.
+		</p>
+		</p>
+	</div>
+
+
+
+
+	<table border="10px" width="100%" position="bottom">
+		<tr>
+			<th><a href="../../Menu.html">Menu de projetos</a></th>
+		</tr>
+	</table>
+	
+	</body>
+	</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula sobre tamanhos de textos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style type="text/css">
+		
+/*
+px - Tamanho fixo;
+% - Tamanho relativo ao padrao adotado pelos navegadores;
+em - Tamanho relativo ao container pai;
+*/
+
+		.exemplo1{
+			font-size: 20px;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+
+		div{
+			font-size: 25px;
+			font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+		}
+
+		.texto1_exemplo2{
+			font-size: 1em;
+		}
+
+		.texto2_exemplo2{
+			font-size: 14px;
+		}
+
+		.texto3_exemplo2_explicando{
+			font-size: 16px;
+		}
+
+	</style>
+
+
+
+</head>
+<body>
+
+<p class="exemplo1"> Este é o exemplo 1, onde usamos a unidade de medida px, a unidade de medida px é Um tamanho fixo.</p>
+
+<hr>
+
+<div>
+<p class="texto1_exemplo2">Este texto esta em uma div junto com o texto 2 
+porem este tem o tamanho de 1em neste caso 1em significa que temos 25px, pois definimos na div.</p>
+
+<p class="texto2_exemplo2">Este texto esta em uma div junto com o texto 1
+porem este tem o tamanho de 14px.</p>
+
+<p class="texto3_exemplo2_explicando"> Quando usamos o em a medida se baseia na classe pai, que definimos com o tamnaho 60px porem mesmo estando na mesma classe, o texto 2 tem tamanho diferente pois foi usada a unidade de medida px. Logo o px é específico e vai prevalecer dentro de uma classe.</p>
+</div>
+
+
+<table border="10px" width="100%">
+		<tr>
+			<th><a href="../../Menu.html">Menu de projetos</a></th>
+		</tr>
+				
+	</table>
+</body>
+</html>

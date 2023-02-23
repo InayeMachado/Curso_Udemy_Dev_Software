@@ -1,0 +1,68 @@
+<!doctype>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sobrepondo Elementos</title>
+		<style type="text/css">
+			
+			.Conteudo1{
+				border: 1px solid blueviolet;
+				background: orange;
+				width: 300px;
+				height: 230px;
+				position: absolute;
+				top: 60px;
+				z-index: 1;
+				margin: auto auto auto 40px;
+				padding: 20px;
+			}
+
+			.Conteudo2{
+				border: 1px solid blueviolet;
+				background: green;
+				width: 300px;
+				height: 230px;
+				position: absolute;
+				top: 150px;
+				left: 80px;
+				z-index: 0;
+				margin: auto auto auto 40px;
+				padding: 20px;
+			}
+
+
+
+		</style>
+
+	</head>
+
+
+
+	<body>
+
+		<div class="Conteudo1">
+			Z INDEX: tambem é chamaado deNeste exemplo vemos a caixa amarela por CIMA da verde, isso ocorre pois foi definido um z-index maior. Para isso definimos um valor para ambas as prorpiedades e colocamos o maior valor na que quermos que fique a frente (quanto maior o z index mais a frente o elemento estara). Caso nao fosse definido a propriwedade z index, a caixa verde estaria a cima da amarela pois estaria seguindo a ordem natural do código.
+			Caso houvesse mais um elemento e ele fosse definido com um mesmo z index, a formatação fica a mesma do documento, ou seja vai seguir a ordem natural
+				 
+		</div>
+
+		<div class="Conteudo2">
+			Neste exemplo vemos a caixa amarela por CIMA da verde, isso ocorre pois foi definido um z-index maior. Para isso definimos um valor para ambas as prorpiedades e colocamos o maior valor na que quermos que fique a frente (quanto maior o z index mais a frente o elemento estara). Caso nao fosse definido a propriwedade z index, a caixa verde estaria a cima da amarela pois estaria seguindo a ordem natural do código.
+			Caso houvesse mais um elemento e ele fosse definido com um mesmo z index, a formatação fica a mesma do documento, ou seja vai seguir a ordem natural
+
+		</div>
+
+		
+
+
+
+	
+
+	<table border="10px" width="100%" position="bottom">
+		<tr>
+			<th><a href="../../Menu.html">Menu de projetos</a></th>
+		</tr>
+	</table>
+	</body>
+	</html>
