@@ -1,0 +1,25 @@
+ul{
+	
+	list-style-type: none; /* Retira as bolinhas, numeros e etc da lista*/
+	margin: 0px;
+	padding: 0px;
+	width: 16%;
+}
+
+
+li a{
+	background: url(img/menu.png)no-repeat left bottom;
+	height: 40px;
+	width: 200px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 35px;
+	line-height: 40px;
+
+}
+
+a:hover{
+	background-position: right bottom;
+	color: white;
+}
